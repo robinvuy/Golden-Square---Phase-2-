@@ -6,7 +6,7 @@ RSpec.describe "make snippet method" do
     expect(result).to eq "i went to bank"
   end  
   it "adds ... onto end of string if it contains 5 words or more" do
-    result = make_snippet("I got accepted into makers")
+    result = make_snippet("I got accepted into makers yay")
     expect(result).to eq "I got accepted into makers..."  
   end
 end
