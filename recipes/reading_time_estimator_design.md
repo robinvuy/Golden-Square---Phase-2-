@@ -16,25 +16,25 @@ reading_time = estimating_reading_time(text)
 #1 
 estimating_reading_time("") => 0
 
-#3
+#2
 estimating_reading_time(FIVE_WORDS) => 1
 
-#2
+#3
 estimating_reading_time(ONE_HUNDRED_WORDS) => 1
 
-#3
+#4
 estimating_reading_time(TWO_HUNDRED_WORDS) => 1
 
-#4
+#5
 estimating_reading_time(THREE_HUNDRED_WORDS) => 2
 
-#4
+#6
 estimating_reading_time(FOUR_HUNDRED_WORDS) => 2
 
-#5
+#7
 estimating_reading_time(ONE_THOUSAND_WORDS) => 5
 
-#6
+#8
 estimating_reading_time(FOUR_THOUSAND_WORDS) => 20
 
 4. Implement the Behaviour
