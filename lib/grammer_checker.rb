@@ -9,7 +9,7 @@ def grammer_checker(text)
   end
 end
   
-puts grammer_checker("I like to code!")
+#puts grammer_checker("I like to code!")
   
   
   
