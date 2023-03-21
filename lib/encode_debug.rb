@@ -21,6 +21,7 @@ end
 # error was we used "..." which doesn't include last letter i.e z, so instead we use ".."
 # > decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
 # => "theswiftfoxjumpedoverthelazydog"
+#error was: meant to be char.ord - 65
 
 puts encode("theswiftfoxjumpedoverthelazydog", "secretkey")
 #puts encode("swift", "secretkey") 
