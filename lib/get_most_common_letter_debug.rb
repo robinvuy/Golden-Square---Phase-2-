@@ -3,7 +3,7 @@ def get_most_common_letter(text)
   text.chars.each do |char|  #iterating over text arguement for each character
     counter[char] += 1       #adding 1 to counter for each character that pops up
   end
-  counter.to_a.sort_by { |k, v| v }[10][0]   #turning counter into an array and sorting it by most common letter
+  counter.to_a.sort_by { |k, v| [-v, k] }[1][0]   #turning counter into an array and sorting it by most common letter
 end
 
 # Intended output:
