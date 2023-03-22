@@ -10,5 +10,10 @@ class Todo
   def list
     return @task
   end
+
+  def complete(done_task)
+   fail "No such task exists!" if @task.include?(done_task) == false
+    @task.delete(done_task)
+  end
 end
 

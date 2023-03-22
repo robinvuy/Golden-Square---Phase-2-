@@ -6,9 +6,9 @@
 As a user
 So that I can keep track of my tasks
 I want a program that I can add todo tasks to and see a list of them.
-A)As a user
+As a user
 So that I can focus on tasks to complete
-B)I want to mark tasks as complete and have them disappear from the list.
+I want to mark tasks as complete and have them disappear from the list.
 
 2. Design the Class Interface
 #Include the initializer and public methods with all parameters and return values
@@ -24,21 +24,40 @@ class Todo
     #returns list of stored tasks
   end
 
-#will add in part B later
+  def complete
+    #removes task
+  end
+end
 
 3. Create Examples as Tests
-
 Make a list of examples of how the class will behave in different situations.
-A)
+
 1.
+todo = Todo.new
+todo.store
+todo.list => []
+
+2.
 todo = Todo.new
 todo.store("walk the dog")
 todo.list => ["walk the dog"]
 
-2.
+3.
 todo = Todo.new
 todo.store("Walk the dog")
 todo.store("Water the plants")
 todo.list => ["Walk the dog, "Water the plants"]
 
-3.
+4.
+todo = Todo.new
+todo.store("Walk the dog")
+todo.store("Water the plants")
+todo.complete("Walk the dog")
+todo.list => ["Water the plants"]
+
+5.
+todo = Todo.new
+todo.store("Walk the dog")
+todo.store("Water the plants")
+todo.complete("walk the car")
+todo.list => # fails "No such task exists!"
