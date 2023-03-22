@@ -6,6 +6,11 @@ RSpec.describe MusicTracker do
       playlist = MusicTracker.new
       expect(playlist.list).to eq []
     end
+    
+    it "fails" do
+      playlist = MusicTracker.new
+      expect { playlist.list }.to raise_error "No songs added!"
+    end
   end
 
   context "Given an added song" do
@@ -24,5 +29,7 @@ RSpec.describe MusicTracker do
       expect(playlist.list).to eq ["Killing in the name of", "In the air tonight"]
     end
   end
+
+
 
 end

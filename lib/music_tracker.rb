@@ -8,6 +8,7 @@ class MusicTracker
   end
 
   def list
+    fail "No songs added!" if @song.empty?
     return @song
   end
 
