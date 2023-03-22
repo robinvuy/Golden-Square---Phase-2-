@@ -21,11 +21,12 @@ class Todo
   end
 
   def list
-    #returns list of stored tasks
+    #returns list of stored tasks except completed tasks
   end
 
-  def complete
+  def complete(task) #task: string representing completed task
     #removes task
+    #fails if task doesn't exist
   end
 end
 
