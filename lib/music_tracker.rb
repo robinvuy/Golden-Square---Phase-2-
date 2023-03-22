@@ -11,7 +11,9 @@ class MusicTracker
     fail "No songs added!" if @song.empty?
     return @song
   end
-
-
 end
   
+music = MusicTracker.new
+p music.add("yello")
+p music.add("bello")
+p music.list
