@@ -7,7 +7,6 @@ class LetterCounter
 
   def calculate_most_common()
     counter = Hash.new(0)
-
     most_common = ""
     most_common_count = 0
     @text.chars.each do |char|

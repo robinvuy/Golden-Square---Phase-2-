@@ -12,6 +12,10 @@ RSpec.describe LetterCounter do
     result = counter.calculate_most_common()
     expect(result).to eq [2, "o"]
   end
- 
-
+  
+  it "returns correct common letter and common letter count" do
+    counter = LetterCounter.new("moot point?")
+    result = counter.calculate_most_common()
+    expect(result).to eq [3, "o"]
+  end
 end
