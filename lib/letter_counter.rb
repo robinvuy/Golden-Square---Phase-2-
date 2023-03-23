@@ -9,18 +9,18 @@ class LetterCounter
     counter = Hash.new(0)
 
     most_common = ""
-    most_common_count = 1
+    most_common_count = 0
     @text.chars.each do |char|
       #binding.irb
       next unless is_letter?(char)
       #binding.irb
-      counter[char] = (counter[char] || 1) + 1
+      counter[char] = (counter[char] || 1 ) + 1
       #binding.irb
       if counter[char] > most_common_count
         #binding.irb
         most_common = char
         #binding.irb
-        most_common_count += counter[char]
+        most_common_count = counter[char]
         #binding.irb      
       end
     end
@@ -39,3 +39,4 @@ p counter.calculate_most_common
 
 # Intended output:
 # [2, "i"]
+
