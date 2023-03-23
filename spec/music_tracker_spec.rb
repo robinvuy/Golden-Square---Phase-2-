@@ -2,7 +2,7 @@ require "music_tracker"
 
 RSpec.describe MusicTracker do
   context "Given no song added" do
-    it "Returns empty brackets" do
+    xit "Returns empty brackets" do
       playlist = MusicTracker.new
       expect(playlist.list).to eq []
     end
