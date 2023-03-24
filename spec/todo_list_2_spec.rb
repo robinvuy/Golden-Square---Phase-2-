@@ -6,5 +6,5 @@ RSpec.describe TodoList do
     todo_list.add("Go to gym")
     expect(todo_list.incomplete).to eq ["Go to gym"]
   end
-
+  
 end
