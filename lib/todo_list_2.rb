@@ -9,15 +9,15 @@ class TodoList
   end
 
   def incomplete # Returns all non-done todos
-    return @todo
+    @todo.reject(&:done?)
   end
 
-  def complete
-    # Returns all complete todos
+  def complete # Returns all complete todos
+    @todo.select(&:done?)
   end
 
-  def give_up!
-    # Marks all todos as complete
+  def give_up! # Marks all todos as complete
+    @todo.each(&:mark_done!)
   end
 end
 

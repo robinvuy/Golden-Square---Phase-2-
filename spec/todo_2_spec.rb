@@ -8,12 +8,14 @@ RSpec.describe Todo do
     end
   end
   
-  describe "#done?" do
+  describe "#mark_done?" do
     it "fails if task has not been entered" do
-      todo = Todo.new()
-      expect { todo.done? }.to raise_error "task does not exist"
+      todo = Todo.new("")
+      expect { todo.mark_done! }.to raise_error "task does not exist"
     end
-    
+  end
+
+  describe "#done?" do 
     it "returns true if tasks are done" do
       todo = Todo.new("Go to gym")
       todo.mark_done!
