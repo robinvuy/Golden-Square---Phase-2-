@@ -4,7 +4,7 @@ class TodoList
     @todo = []
   end
 
-  def add(todo) # todo is an instance of Todo # Returns nothing
+  def add(todo) # todo is an instance of Todo# Returns nothing
     @todo << todo
   end
 

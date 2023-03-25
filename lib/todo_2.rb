@@ -22,7 +22,7 @@ class Todo
   end
 end
 
-todo = Todo.new("hi")
+#todo = Todo.new("hi")
 p todo.task
 p todo.mark_done!
 p todo.done?
